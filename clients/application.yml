@@ -13,4 +13,4 @@ spring:
       fail-fast: true
 
   devtools:
-    add-properties: false
+    add-properties: fals

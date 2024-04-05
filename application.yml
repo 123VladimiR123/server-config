@@ -10,3 +10,8 @@
 #    show-sql: false
 #  flyway:
 #    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8866/eureka/
