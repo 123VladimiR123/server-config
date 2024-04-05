@@ -13,9 +13,4 @@ spring:
       fail-fast: true
 
   devtools:
-    add-properties: fals
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9000/eureka/
+    add-properties: false
