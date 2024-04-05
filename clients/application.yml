@@ -1,16 +1,16 @@
-spring:
-  application:
-    name: clients
-
-  profiles:
-    active: dev
-
-  config:
-    import: optional:configserver:http://localhost:8888
-
-  cloud:
-    config:
-      fail-fast: true
-
-  devtools:
-    add-properties: false
+#spring:
+#  application:
+#    name: clients
+#
+#  profiles:
+#    active: dev
+#
+#  config:
+#    import: optional:configserver:http://localhost:8888
+#
+#  cloud:
+#    config:
+#      fail-fast: true
+#
+#  devtools:
+#    add-properties: false
