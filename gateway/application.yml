@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${EUREKA_ADDRESS}/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: clients
+          uri: lb://CLINETS
+          predicates:
+            - Path=/**
