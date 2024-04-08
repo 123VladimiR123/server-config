@@ -16,4 +16,4 @@ spring:
         - id: clients
           uri: lb://CLIENTS
           predicates:
-            - Path=**
+            - Path=/
