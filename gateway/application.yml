@@ -23,7 +23,7 @@ spring:
         - id: clients
           uri: lb://clients
           predicates:
-          - Path=**
+          - Path=/**
 
 management:
   endpoint:
