@@ -20,6 +20,6 @@ spring:
         - eth3
         - lo
 eureka:
-  client:
-    instance:
-     preferIpAddress: true
+  instance:
+    preferIpAddress: true
+    host: localhost
