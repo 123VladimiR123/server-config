@@ -22,4 +22,5 @@ spring:
 
 eureka:
   instance:
+    prefer-ip-address: false
     host: localhost
