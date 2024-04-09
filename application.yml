@@ -10,3 +10,15 @@
 #    show-sql: false
 #  flyway:
 #    enabled: true
+spring:
+  cloud:
+    inetutils:
+      ignored-interfaces:
+        - eth0
+        - eth1
+        - eth2
+        - eth3
+        - lo
+eureka:
+  instance:
+    preferIpAddress: true
