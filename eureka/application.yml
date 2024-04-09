@@ -10,7 +10,8 @@ eureka:
       defaultZone: http://${EUREKA_ADDRESS}/eureka/
 #  server:
 #    enable-self-preservation: false
-    instance:
-      preferIpAddress: true
+
+  instance:
+    preferIpAddress: true
 
   renewalPercentThreshold: 0.85
