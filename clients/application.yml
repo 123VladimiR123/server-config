@@ -14,9 +14,6 @@
 #
 #  devtools:
 #    add-properties: false
-server:
-  port: ${PORT}
-
 eureka:
   client:
     service-url:
