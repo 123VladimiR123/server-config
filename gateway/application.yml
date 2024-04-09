@@ -21,7 +21,7 @@ spring:
 
       routes:
         - id: clients
-          uri: lb://CLIENTS
+          uri: lb://clients
           predicates:
           - Path=**
 
