@@ -19,8 +19,7 @@ spring:
         - eth2
         - eth3
         - lo
+
 eureka:
-  client:
-    instance:
-      preferIpAddress: true
-      host: localhost
+  instance:
+    prefer-ip-address: true
