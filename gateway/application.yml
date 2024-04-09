@@ -2,6 +2,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://${EUREKA_ADDRESS}/eureka/
+    register-with-eureka: false
 
 
 
