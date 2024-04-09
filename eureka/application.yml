@@ -11,6 +11,6 @@ eureka:
 #  server:
 #    enable-self-preservation: false
     instance:
-      prefer-ip-address: true
+      preferIpAddress: true
 
   renewalPercentThreshold: 0.85
