@@ -4,7 +4,7 @@ spring:
 
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: true
     fetch-registry: false
 
   renewalPercentThreshold: 0.85
