@@ -11,15 +11,15 @@ spring:
           lowerCaseServiceId: true
 
       routes:
-        - id: clients
-          uri: lb://clients
-          predicates:
-            - Path=/**
         - id: security
           uri: lb://security
           predicates:
             - Path=/login
             - Path=/register
+        - id: clients
+          uri: lb://clients
+          predicates:
+            - Path=/**
 
 management:
   endpoint:
