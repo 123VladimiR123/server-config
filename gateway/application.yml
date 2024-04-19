@@ -17,7 +17,7 @@ spring:
           predicates:
             - Path=/login,/registration,/logout
           filters:
-            - RewriteRequestParameter=failure,error,pass,exists,incorrect
+            - AddRequestParameter=failure,error,pass,exists,incorrect
         - id: clients
           uri: lb://clients
           order: 2
