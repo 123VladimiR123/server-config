@@ -3,10 +3,10 @@ server:
     8000
 
 spring:
-  logging:
-    level: debug
   cloud:
     gateway:
+      logging:
+        level: debug
       discovery:
         locator:
           enabled: true
