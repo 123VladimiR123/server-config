@@ -1,9 +1,6 @@
 server:
   port:
     10000
-  cloud:
-    discovery:
-      enabled: off
   datasource:
     url: jdbc:postgresql://localhost:5432/application
     username: user
