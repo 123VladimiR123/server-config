@@ -15,7 +15,7 @@ spring:
           uri: lb://security
           order: 1
           predicates:
-            - Path=/login,/registration
+            - Path=/login,/registration,/logout
         - id: clients
           uri: lb://clients
           order: 2
