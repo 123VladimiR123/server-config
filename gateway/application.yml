@@ -5,8 +5,6 @@ server:
 spring:
   cloud:
     gateway:
-      logging:
-        level: debug
       discovery:
         locator:
           enabled: true
@@ -17,7 +15,7 @@ spring:
           uri: lb://security
           predicates:
             - Path=/login
-            - Path=/register
+            - Path=/registration
         - id: clients
           uri: lb://clients
           predicates:
