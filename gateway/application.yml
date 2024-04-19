@@ -18,6 +18,7 @@ spring:
             - Path=/login,/registration,/logout
           filters:
             - AddRequestParameter=failure,error,pass,exists,incorrect
+            - RewriteResponseHeader=X-Original-Location, (?<location>.*), http://localhost:8000
         - id: clients
           uri: lb://clients
           order: 2
