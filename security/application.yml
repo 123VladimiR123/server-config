@@ -2,8 +2,6 @@ server:
   port:
     10000
   cloud:
-    config:
-      fail-fast: true
     discovery:
       enabled: off
   datasource:
