@@ -2,17 +2,4 @@ spring:
   application:
     name: eureka
 
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://${EUREKA_ADDRESS}/eureka/
-#  server:
-#    enable-self-preservation: false
-
-  instance:
-    preferIpAddress: true
-
   renewalPercentThreshold: 0.85
