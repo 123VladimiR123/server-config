@@ -14,7 +14,12 @@ spring:
         - id: clients
           uri: lb://clients
           predicates:
-          - Path=/**
+            - Path=/**
+        - id: security
+          uri: lb://security
+          predicates:
+            - Path=/login
+            - Path=/register
 
 management:
   endpoint:
