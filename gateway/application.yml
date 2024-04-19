@@ -13,11 +13,13 @@ spring:
       routes:
         - id: security
           uri: lb://security
+          order: 0
           predicates:
             - Path=/login
             - Path=/registration
         - id: clients
           uri: lb://clients
+          order: 1
           predicates:
             - Path=/**
 
