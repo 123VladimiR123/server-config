@@ -18,14 +18,12 @@ spring:
             - Path=/login,/registration,/logout
           filters:
             - AddRequestParameter=failure,error,pass,exists,incorrect
-            - AddResponseHeader=X-Original-Location, (?<location>.*), http://localhost:8000
         - id: clients
           uri: lb://clients
           order: 2
           predicates:
             - Path=/**
           filters:
-            - AddResponseHeader=X-Original-Location, (?<location>.*), http://localhost:8000
 
 management:
   endpoint:
