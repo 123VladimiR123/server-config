@@ -10,6 +10,8 @@
 #    show-sql: false
 #  flyway:
 #    enabled: true
+server:
+  address: localhost
 eureka:
   instance:
     prefer-ip-address: true
