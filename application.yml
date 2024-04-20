@@ -11,7 +11,7 @@
 #  flyway:
 #    enabled: true
 server:
-  address: localhost
+  address: http://localhost
 eureka:
   instance:
     prefer-ip-address: true
