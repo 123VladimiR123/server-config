@@ -11,3 +11,13 @@ spring:
 jwt:
   cookie:
     name: JwtCookie
+
+redirect:
+  prefix: ${LOCALHOST_GATEWAY_ADDRESS}
+
+custom:
+  kafka:
+    address: ${KAFKA_ADDRESS}
+    topic:
+      request: ${TOPIC_REQUEST}
+      response: ${TOPIC_RESPONSE}
