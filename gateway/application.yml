@@ -24,9 +24,11 @@ spring:
           predicates:
             - Path=/**
 
-  kafka:
-    bootstrap-servers:
-      ${KAFKA_ADDRESS}
+    stream:
+      kafka:
+        binder:
+          brokers: ${KAFKA_ADDRESS}
+          defaultBrokerPort: ${KAFKA_PORT}
 
 management:
   endpoint:
@@ -40,7 +42,7 @@ management:
 
 custom:
   kafka:
-    address: ${KAFKA_ADDRESS}
+    address: ${KAFKA_ADDRESS}:${KAFKA_PORT}
     topics:
       request: ${TOPIC_REQUEST}
       response: ${TOPIC_RESPONSE};

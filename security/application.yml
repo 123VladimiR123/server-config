@@ -8,9 +8,12 @@ spring:
     username: user
     password: user
 
-  kafka:
-    bootstrap-servers:
-      ${KAFKA_ADDRESS}
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: ${KAFKA_ADDRESS}
+          defaultBrokerPort: ${KAFKA_PORT}
 
 jwt:
   cookie:
@@ -21,7 +24,7 @@ redirect:
 
 custom:
   kafka:
-    address: ${KAFKA_ADDRESS}
+    address: ${KAFKA_ADDRESS}:${KAFKA_PORT}
     topic:
       request: ${TOPIC_REQUEST}
       response: ${TOPIC_RESPONSE}
