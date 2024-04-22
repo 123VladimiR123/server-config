@@ -8,6 +8,10 @@ spring:
     username: user
     password: user
 
+  kafka:
+    bootstrap-servers:
+      ${KAFKA_ADDRESS}
+
 jwt:
   cookie:
     name: JwtCookie

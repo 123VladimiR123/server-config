@@ -24,6 +24,10 @@ spring:
           predicates:
             - Path=/**
 
+  kafka:
+    bootstrap-servers:
+      ${KAFKA_ADDRESS}
+
 management:
   endpoint:
     gateway:
