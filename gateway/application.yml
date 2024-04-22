@@ -33,3 +33,14 @@ management:
     web:
       exposure:
         include: gateway
+
+custom:
+  kafka:
+    address: ${KAFKA_ADDRESS}
+    topics:
+      request: ${TOPIC_REQUEST}
+      response: ${TOPIC_RESPONSE};
+
+jwt:
+  cookie:
+    name: JwtCookie
