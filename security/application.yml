@@ -8,12 +8,8 @@ spring:
     username: user
     password: user
 
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: ${KAFKA_ADDRESS}
-          defaultBrokerPort: ${KAFKA_PORT}
+  kafka:
+    bootstrap-servers: ${KAFKA_ADDRESS}:${KAFKA_PORT}
 
 jwt:
   cookie:

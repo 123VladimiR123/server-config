@@ -23,12 +23,9 @@ spring:
           order: 2
           predicates:
             - Path=/**
-
-    stream:
-      kafka:
-        binder:
-          brokers: ${KAFKA_ADDRESS}
-          defaultBrokerPort: ${KAFKA_PORT}
+            -
+  kafka:
+    bootstrap-servers: ${KAFKA_ADDRESS}:${KAFKA_PORT}
 
 management:
   endpoint:
