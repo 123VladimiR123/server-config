@@ -43,7 +43,7 @@ custom:
     address: ${KAFKA_ADDRESS}:${KAFKA_PORT}
     topics:
       request: ${TOPIC_REQUEST}
-      response: ${TOPIC_RESPONSE};
+      response: ${TOPIC_RESPONSE}
 
 jwt:
   cookie:
