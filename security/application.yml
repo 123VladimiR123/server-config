@@ -10,6 +10,8 @@ spring:
 
   kafka:
     bootstrap-servers: ${KAFKA_ADDRESS}:${KAFKA_PORT}
+    consumer:
+      group-id: default-security-consumer
 
 jwt:
   cookie:
