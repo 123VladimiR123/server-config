@@ -23,7 +23,6 @@ spring:
           order: 2
           predicates:
             - Path=/**
-            -
   kafka:
     bootstrap-servers: ${KAFKA_ADDRESS}:${KAFKA_PORT}
 
