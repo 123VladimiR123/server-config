@@ -25,6 +25,8 @@ spring:
             - Path=/**
   kafka:
     bootstrap-servers: ${KAFKA_ADDRESS}:${KAFKA_PORT}
+    consumer:
+      group-id: default-gateway-consumer
 
 management:
   endpoint:
