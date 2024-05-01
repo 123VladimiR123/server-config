@@ -39,6 +39,8 @@ management:
         include: gateway
 
 custom:
+  gateway:
+    address: ${LOCALHOST_GATEWAY_ADDRESS}
   kafka:
     address: ${KAFKA_ADDRESS}:${KAFKA_PORT}
     topics:
@@ -48,3 +50,5 @@ custom:
 jwt:
   cookie:
     name: JwtCookie
+
+
