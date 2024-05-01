@@ -8,7 +8,7 @@ spring:
     mongodb:
       username: ${MONGO_USER}
       password: ${MONGO_PASSWORD}
-      uri: mongodb://${MONGO_ADDRESS}/${MONGO_DB}
+      uri: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_ADDRESS}/${MONGO_DB}?authSource=admin&authMechanism=SCRAM-SHA-1
 
   jackson:
     serialization:
