@@ -1,27 +1,11 @@
-#spring:
-#  application:
-#    name: clients
-#
-#  profiles:
-#    active: dev
-#
-#  config:
-#    import: optional:configserver:http://localhost:8888
-#
-#  cloud:
-#    config:
-#      fail-fast: true
-#
-#  devtools:
-#    add-properties: false
 spring:
   datasource:
     url: jdbc:mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_ADDRESS}/${MONGO_DB}
-#  data:
-#    mongodb:
-#      username: ${MONGO_USER}
-#      password: ${MONGO_PASSWORD}
-#      uri: mongodb://${MONGO_ADDRESS}/${MONGO_DB}
+  data:
+    mongodb:
+      username: ${MONGO_USER}
+      password: ${MONGO_PASSWORD}
+      uri: mongodb://${MONGO_ADDRESS}/${MONGO_DB}
 
   jackson:
     serialization:
