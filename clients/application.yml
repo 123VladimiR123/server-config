@@ -3,7 +3,7 @@ spring:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
   datasource:
-    url: jdbc:mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_ADDRESS}/${MONGO_DB}
+    url: jdbc:mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_ADDRESS}/${MONGO_DB}?authSource=admin&authMechanism=SCRAM-SHA-1
   data:
     mongodb:
       username: ${MONGO_USER}
