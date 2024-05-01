@@ -14,3 +14,17 @@
 #
 #  devtools:
 #    add-properties: false
+spring:
+  data:
+    mongodb:
+      username: ${MONGO_USER}
+      password: ${MONGO_PASSWORD}
+      uri: mongodb://${MONGO_ADDRESS}/${MONGO_DB}
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+custom:
+  gateway:
+    address: ${LOCALHOST_GATEWAY_ADDRESS}
