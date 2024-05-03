@@ -2,6 +2,10 @@ spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
+  web:
+    resources:
+      static-locations: classpath:/resources/static
+
   datasource:
     url: jdbc:mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_ADDRESS}/${MONGO_DB}?authSource=admin&authMechanism=SCRAM-SHA-1
   data:
