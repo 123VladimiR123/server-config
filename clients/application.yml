@@ -4,7 +4,7 @@ spring:
 
   web:
     resources:
-      static-locations: classpath:/resources/static
+      static-locations: classpath:/resources/
 
   datasource:
     url: jdbc:mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_ADDRESS}/${MONGO_DB}?authSource=admin&authMechanism=SCRAM-SHA-1
